@@ -5,7 +5,7 @@ Scripts MADOBIS TFM "The mobilome of Dianthus broteri (Caryophyllaceae): compari
 
 Authors: Raquel Villar, Francisco Balao, Jesús Picazo, Ovidiu Paun
 
-The code used for the different analyses are shown in the next two files
+The code used for the different analyses are shown in the next two files:
 
 [Bash code](Bashcode.md)
 
