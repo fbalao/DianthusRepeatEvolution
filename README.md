@@ -9,4 +9,4 @@ The code used for the different analyses are shown in the next two files
 
 [Bash code](Bashcode.md)
 
-[R software code](Rcode.md)
+[R software code](Rcode.R)
