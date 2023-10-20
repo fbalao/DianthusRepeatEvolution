@@ -389,7 +389,8 @@ LTR_retriever -genome diaCarSQ_edited.fa  -inharvest genome.harvest.scn -threads
 #  We maintain the default parameters using a mutation rate of 1.3 x 10 -8, that of Oryzia sativa.
 
 # Broteri:
-LTR_retriever -genome diaBro01.fasta -inharvest genome.diaBro.harvest.scn -missmax 8 -missrate 0.6 -threads 6 > retriever_bro_02.txt
+LTR_retriever -genome diaBro01.fasta -inharvest genome.diaBro.harvest.scn -threads 8 > retriever_bro_01.txt
+
 ```
 
 # 4. TEsorter
