@@ -172,6 +172,14 @@ dev.off()
 # pos Labels we have specified before
 # adj: Centres the text horizontally and vertically 
 
+### % of LTR in the genome:
+prueba <- read.table("./repeatmasker/diaCarSQ_edited.full.tabular", header = F) # SQ
+prueba <- read.table("./repeatmasker/diaBro01.full_mask.tabulate", header = F) # DB
+
+LTR <- subset(prueba, prueba$V1 =='LTR')
+ltr_tot_genlen <- sum(LTR$V4)
+
+
 ############ LTR retriever analysis ###################
 
 ######### Data pre-processing
@@ -520,9 +528,8 @@ ggboxplot(df_prueba, x = "group", y = "valores",
 kruskal.test(valores ~ group, data = df_prueba)
 # data: values by group
 # Kruskal-Wallis chi-squared = 1209.7, df = 7, p-value < 0.00000000000000022
-# The p-value < 0.05 so we know that there are significant differences between the distributions of the variables.
 
-# So we performed a two-by-two wilcoxon test to 
+# We performed a two-by-two wilcoxon test to 
 # determine the differences between the different species. 
 # The wilcoxon test allows us to compare the medians.
 # H1: The medians are not equal
